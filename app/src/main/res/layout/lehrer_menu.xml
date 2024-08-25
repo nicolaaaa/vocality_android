@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/sun_clouds"
+    android:id="@+id/mainLehrer"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:id="@+id/modeSwitch2"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/top" />
+
+<include layout="@layout/toolbar_main"></include>
+
+    <Button
+        android:id="@+id/kursButton"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getKurse"
+        android:layout_marginBottom="10dp"
+        android:text="Meine Vokabellisten" />
+
+    <Button
+        android:id="@+id/studentButton"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getStudents"
+        android:visibility="visible"
+        android:text="Meine Studenten" />
+    </LinearLayout>

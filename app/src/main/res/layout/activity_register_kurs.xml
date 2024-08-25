@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLehrer"
+    android:background="@drawable/sun_clouds"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_main"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="KursName"
+        android:inputType="textPersonName"
+        android:textColor="?attr/farbe"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Create"
+        android:text="Erstellen"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="409dp"
+        android:divider="?attr/farbe"
+        android:dividerHeight="1dp"
+        android:visibility="visible" />
+
+</LinearLayout>

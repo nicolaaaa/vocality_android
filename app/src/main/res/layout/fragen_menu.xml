@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/sun_clouds"
+    android:id="@+id/mainLehrer"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar_main"></include>
+
+    <Button
+        android:id="@+id/testButton"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:onClick="newFrage"
+        android:text="neuen Text schreiben" />
+
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/button"
+        android:onClick="getFragen"
+        android:text="Texte bewerten"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/statistikButton"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="myFragen"
+        android:text="Punkte abholen"
+        />
+
+    <Button
+        android:id="@+id/revBtn"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="review"
+        android:text="Meine Reviews"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/frageBtn"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fragen"
+        android:layout_marginBottom="10dp"
+        android:text="Meine Texte"
+        android:visibility="gone" />
+
+</LinearLayout>

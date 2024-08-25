@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nicola.login">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="Vocality"
+        android:roundIcon="@mipmap/heart_launcher_round"
+        android:icon="@mipmap/heart_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.My">
+        <activity
+            android:name=".Login.LoginActivity"
+            android:label="Vocality"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/AppTheme.My">
+        </activity>
+        <activity
+            android:name=".Login.RegisterActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".MainLehrerActivity">
+
+        </activity>
+        <activity android:name=".MainSchulerActivity"></activity>
+        <activity android:name=".Statistik"></activity>
+        <activity android:name=".List.GetAllActivity" />
+        <activity
+            android:name=".List.NewActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".List.GetVocabularyActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".List.DeleteActivity" />
+        <activity android:name=".Test.TestBuilderActivity" />
+        <activity android:name=".Test.NewTestActivity" />
+        <activity
+            android:name=".Texte.TextActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Texte.TextMenuActivity" />
+        <activity android:name=".Texte.MeineReviews" />
+        <activity android:name=".SplashActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Texte.AnswerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Login.RegisterKursActivity" />
+        <activity android:name=".CreateProduct" />
+        <activity android:name=".Texte.MeineTexteActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/sun_clouds"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:id="@+id/modeSwitch2"
+        android:background="?attr/top"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/toolbar_main"></include>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="50dp"
+            android:id="@+id/Lvl"
+            android:layout_height="50dp"
+            android:background="@drawable/badge2"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="100"
+            android:progress="0"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/expText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/otherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/button"
+        android:layout_marginBottom="10dp"
+        android:onClick="fragen"
+        android:text="Texte schreiben" />
+
+    <Button
+        android:id="@+id/statistikButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/button"
+        android:onClick="getStatistik"
+        android:text="Statistik" />
+
+    <Button
+        android:id="@+id/listButton"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="22dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="getLists"
+        android:text="Vokabellisten" />
+
+    <Button
+        android:id="@+id/testButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/button"
+        android:elevation="0dp"
+        android:onClick="getTest"
+        android:text="Vokabeltest" />
+</LinearLayout>

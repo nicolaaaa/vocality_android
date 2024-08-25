@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLehrer"
+    android:background="@drawable/sun_clouds"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_main" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progress_barTest"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/expTextTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="TextView"
+            android:textColor="?attr/farbe"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Vokabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="?attr/farbe" />
+
+        <EditText
+            android:id="@+id/transText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="translation"
+            android:inputType="textPersonName"
+            android:textColor="?attr/farbe" />
+
+    <Button
+        android:id="@+id/Check"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkResult"
+        android:text="Ok" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/resultOK"
+        android:background="?attr/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="finished"
+        android:text="OK"
+        android:visibility="gone" />
+
+
+</LinearLayout>
+</LinearLayout>

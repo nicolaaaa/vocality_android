@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <attr name="tool" format="reference"/>
+    <attr name="top" format="reference"/>
+    <attr name="bg" format="reference"/>
+    <attr name="button" format="reference"/>
+    <attr name="farbe" format="reference"/>
+
+
+    <style name="AppTheme.My" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="button">@drawable/button</item>
+        <item name="tool">@drawable/bar</item>
+        <item name="top">@drawable/foo</item>
+        <item name="colorControlNormal">@color/text_color_primary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="farbe">@color/text_color_primary</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:textColorHint">@color/text_color_primary</item>
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+        <item name="bg">@drawable/sun_clouds</item>
+    </style>
+
+    <style name="AppTheme.MyDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="button">@drawable/button_dark</item>
+        <item name="tool">@drawable/bar_dark</item>
+        <item name="top">@drawable/foo_dark</item>
+        <item name="bg">@drawable/sun_clouds</item>
+        <item name="colorControlNormal">@color/text_color_secondary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="farbe">@color/text_color_secondary</item>
+        <item name="android:textColor">@color/text_color_secondary</item>
+        <item name="android:textColorHint">@color/text_color_secondary</item>
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyleDark</item>
+    </style>
+
+
+    <style name="AppCompatAlertDialogStyleDark" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:windowTitleStyle">@style/MyAlertDialogTitle</item>
+    </style>
+
+    <style name="MyAlertDialogTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/text_color_secondary</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:windowTitleStyle">@style/MyAlertDialogTitle</item>
+    </style>
+
+    <style name="title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/farbe</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>
+
+
