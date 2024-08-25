@@ -1,4 +1,5 @@
-# ![Icon](screenshots/Vocality.png) vocality_android
+# vocality_android <img src="screenshots/Vocality.png" alt="" width="24" style="vertical-align: middle;">
+
 Vocabulary trainer for android
 
 ## Demo
