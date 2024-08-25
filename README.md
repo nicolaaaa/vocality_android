@@ -1,12 +1,12 @@
-# vocality_android
+# ![Icon](screenshots/Vocality.png) vocality_android
 Vocabulary trainer for android
 
 ## Demo
 
 <p align="center">
-  <img src="screenshots/badges.PNG" alt="Badge" width="15%">
   <img src="screenshots/DarkDesign.png" alt="Dark Design" width="15%">
   <img src="screenshots/Schuler.png" alt="Menu" width="15%">
+  <img src="screenshots/badges.PNG" alt="Badge" width="15%">
   <img src="screenshots/Lehrer.PNG" alt="Dark Design" width="15%">
   <img src="screenshots/Statistik.png" alt="Dark Design" width="15%">
     <img src="screenshots/Bewertung.PNG" alt="Dark Design" width="15%">
